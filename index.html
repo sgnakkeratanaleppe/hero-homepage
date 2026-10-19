@@ -3,6 +3,7 @@
 <head>
       <link rel="stylesheet" href="stylescard.css">
     <title>My hero page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -37,6 +38,7 @@
         <span class="highlight">linguistics</span>.
     </h4>
 <button onclick="showVideo()">show me a sample!</button>
+
 <div class="video-box">
     <video controls>
       <source src="images/quadlingOK.mp4" type="video/mp4">
@@ -59,6 +61,7 @@
 );
 function showVideo() {
   document.querySelector(".video-box").style.display = "block";
+  document.querySelector(".placeholder").classList.add("hide-line");
 }
 </script>
 </body>
