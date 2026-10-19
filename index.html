@@ -1,0 +1,66 @@
+<html>
+
+<head>
+      <link rel="stylesheet" href="stylescard.css">
+    <title>My hero page</title>
+</head>
+
+<body>
+<!--navigation-->
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Bio</a></li>
+  <li><a href="#">Projects</a></li>
+</ul>
+
+<!--upper half-->
+<div class="top-half">
+    <h2>Hi, this is Marco Giannini</h2>
+    <div class="intro">
+  </div>
+  <div class="placeholder">
+    <img src="images/SAFEST-CARSpicscu3.jpg" alt="Profile" class="avatar">
+</div>
+    <h4>I'm a designer and data journalist. I created
+    <span class="highlight">visualisations</span>
+    throughout my career and spent most of it in fast-paced newsrooms.
+    </h4>
+</div>
+
+<!--lower half-->
+
+<!--text in the page with placeholder appearing in the BG-->
+<div class="lower-section">
+
+    <h4 class="lower-block">
+        This page aims to showcase my next goal, building a repository of visualizations on
+        <span class="highlight">linguistics</span>.
+    </h4>
+<button onclick="showVideo()">show me a sample!</button>
+<div class="video-box">
+    <video controls>
+      <source src="images/quadlingOK.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(".top-half").hover(
+  function () {
+    $(".avatar").css("opacity", "0.75");
+  },
+  function () {
+    $(".avatar").css("opacity", "0");
+  }
+);
+function showVideo() {
+  document.querySelector(".video-box").style.display = "block";
+}
+</script>
+</body>
+
+</html>
